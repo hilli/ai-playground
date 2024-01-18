@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  marqo:
+    image: marqoai/marqo:latest
+    volumes:
+      - data:/training
+    ports:  
+      - 8882:8882
+
+volumes:
+  data:
